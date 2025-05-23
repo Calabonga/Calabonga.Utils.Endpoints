@@ -1,8 +1,12 @@
 ﻿# Extensions for Endpoints (ASP.NET Core)
 
-Simple but very helpful library that's allow to get all metadata for minimal API endpoints using OpenAPI specification.
+Simple but very helpful library ([nuget package](https://www.nuget.org/packages/Calabonga.Utils.Endpoints)) that's allow to get all metadata for minimal API endpoints using OpenAPI specification.
 
-## Версия 1.0.0
+## Why
+
+Sometimes it is necessary to determine which Endpoints exists in the Web API, and this must be done dynamically. For what purpose? To build diagrams, or read access policies, or draw communication schemes. This package gives all the meta information about Endpoints.
+
+## v.1.0.0 2025-05-24
 
 * First release.
 
@@ -119,6 +123,7 @@ public class ModuleService
 ```
 
 Metadata from Endpoints will look's like that:
+
 ```json
 {
   "result": [
