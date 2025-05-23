@@ -5,6 +5,16 @@ on:
     branches: [main]
 
   workflow_dispatch:
+    inputs:
+      logLevel:
+        description: "Log level"
+        required: true
+        default: "warning"
+        type: choice
+        options:
+          - info
+          - warning
+          - debug
 
 permissions:
   contents: read
@@ -22,10 +32,13 @@ jobs:
           dotnet-version: 9.0.x
 
       - name: Install dependencies
-        run: dotnet restore 'src/Calabonga.Utils.Endpoints.sln'
+        run: dotnet restore src/Calabonga.Utils.Endpoints.sln
+
+      - name: Build
+        run: dotnet build src/Calabonga.Utils.Endpoints.sln --configuration Release --no-restore
 
       - name: Build the NuGet package
-        run: dotnet pack 'src/Calabonga.Utils.Endpoints.sln' --configuration Release --output ${{env.DOTNET_ROOT}}\Package
+        run: dotnet pack src/Calabonga.Utils.Endpoints.sln --configuration Release --output ${{env.DOTNET_ROOT}}\Package
 
       - name: Publish NuGet Package
         run: dotnet nuget push ${{env.DOTNET_ROOT}}\Package\*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate
