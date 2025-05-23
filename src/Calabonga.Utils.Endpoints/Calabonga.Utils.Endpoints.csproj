@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Version>1.0.0</Version>
+		<PackageIconUrl>https://www.calabonga.net/images/logo.png</PackageIconUrl>
+		<PackageProjectUrl>https://github.com/Calabonga/Calabonga.Utils.Endpoints</PackageProjectUrl>
+		<PackageTags>calabonga, extensions, helpers, minimal api, openapi</PackageTags>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<Authors>Calabonga</Authors>
+		<Copyright>Calabonga SOFT © 2025-$([System.DateTime]::Now.ToString(yyyy))</Copyright>
+		<Company>Calabonga SOFT</Company>
+		<Description>Some helful extensions for C# .NET. Package contains extensions (C#) that can simplify developer life.</Description>
+		<Product>Some helpful extensions minimal API endpoints</Product>
+		<PackageId>Calabonga.Utils.Endpoints</PackageId>
+		<PackageReleaseNotes>First release</PackageReleaseNotes>
+		<Title>ASP.NET Core Endpoints extensions based on OpenAPI specification</Title>
+		<PackageIcon>logo.png</PackageIcon>
+		<RepositoryUrl>https://github.com/Calabonga/Calabonga.Utils.Endpoints</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Http" Version="2.3.0" />
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.*-*" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="logo.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+</Project>
