@@ -22,10 +22,10 @@ jobs:
           dotnet-version: 9.0.x
 
       - name: Install dependencies
-        run: dotnet restore 'src/Calabonga.Utils.Endpoints/Calabonga.Utils.Endpoints.csproj'
+        run: dotnet restore 'src/Calabonga.Utils.Endpoints.sln'
 
       - name: Build the NuGet package
-        run: dotnet pack 'src/Calabonga.Utils.Endpoints/Calabonga.Utils.Endpoints.csproj' --configuration Release --output ${{env.DOTNET_ROOT}}\Package
+        run: dotnet pack 'src/Calabonga.Utils.Endpoints.sln' --configuration Release --output ${{env.DOTNET_ROOT}}\Package
 
       - name: Publish NuGet Package
         run: dotnet nuget push ${{env.DOTNET_ROOT}}\Package\*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate

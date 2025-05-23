@@ -17,11 +17,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\Calabonga.Utils.Endpoints\Calabonga.Utils.Endpoints.csproj" />
+	  <Folder Include="Infrastructure\Services\" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Infrastructure\Services\" />
+	  <ProjectReference Include="..\..\src\Calabonga.Utils.Endpoints\Calabonga.Utils.Endpoints.csproj" />
 	</ItemGroup>
 
 </Project>

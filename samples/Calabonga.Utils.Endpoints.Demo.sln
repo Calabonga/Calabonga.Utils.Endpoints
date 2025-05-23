@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36109.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calabonga.Utils.Endpoints.Demo", "Calabonga.Utils.Endpoints.Demo\Calabonga.Utils.Endpoints.Demo.csproj", "{4179424F-8B5A-4739-8A4D-20A2BC5C6723}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calabonga.Utils.Endpoints", "..\src\Calabonga.Utils.Endpoints\Calabonga.Utils.Endpoints.csproj", "{77606ED6-6AA8-4D48-D27D-AD7443C8D864}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4179424F-8B5A-4739-8A4D-20A2BC5C6723}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4179424F-8B5A-4739-8A4D-20A2BC5C6723}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4179424F-8B5A-4739-8A4D-20A2BC5C6723}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4179424F-8B5A-4739-8A4D-20A2BC5C6723}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77606ED6-6AA8-4D48-D27D-AD7443C8D864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77606ED6-6AA8-4D48-D27D-AD7443C8D864}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77606ED6-6AA8-4D48-D27D-AD7443C8D864}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77606ED6-6AA8-4D48-D27D-AD7443C8D864}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F5D123A7-5115-4347-BCB6-B8E9BA61C976}
+	EndGlobalSection
+EndGlobal
